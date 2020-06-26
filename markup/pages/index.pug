@@ -1,0 +1,107 @@
+
+extends template
+ 
+block variables
+    -var pagestyle="style_mainpage"
+block scripts
+    
+    //- script(src='%=static=%js/separate-js/tippy.js')
+  
+block content
+    
+    section
+      .container.base-sec
+        h2.reg-title О компании
+        
+        .two-cols-about
+          .two-cols-about__col
+            p Мы занимается внедрением систем электронного документооборота, которые позволяют существенно облегчить отчетность через интернет. Мы являемся официальным партнером Группы компаний «Тензор», разработавшей программу СБИС++.  
+          .two-cols-about__col
+            p На сегодняшний день СБИС++ занимает первое место среди разработок, предназначенных для сдачи отчетности в электронном виде. Мы оказываем услуги юридическим лицам, индивидуальным предпринимателям, а также физическим лицам.  
+        .four-cols-about
+          .four-cols-about__col 
+            .purpl-nums
+                .purpl-nums__text-top 100 000
+                .purpl-nums__text-bottom Клиентов на постоянной #[br] поддержке
+          .four-cols-about__col
+            .purpl-nums
+                .purpl-nums__text-top 30
+                .purpl-nums__text-bottom Офисов по всей России#[br] и продолжаем расширяться
+          .four-cols-about__col
+            .purpl-nums
+                .purpl-nums__text-top 10 лет
+                .purpl-nums__text-bottom Мы успешно работаем#[br] в сфере электронных решений
+          .four-cols-about__col
+            .purpl-nums
+              .purpl-nums__text-top 3+
+              .purpl-nums__text-bottom Гибкая система расчетов для#[br] постояных клиентов
+        .slider-wrap
+          .slider.js_slider
+            .slider__item
+              img.slider__image(src="%=static=%img/general/slider2.jpg", alt="")
+            .slider__item
+              img.slider__image(src="%=static=%img/general/slider3.jpg", alt="")
+            .slider__item
+              img.slider__image(src="%=static=%img/general/slider4.jpg", alt="")
+            .slider__item
+              img.slider__image(src="%=static=%img/general/slider2.jpg", alt="")
+            .slider__item
+              img.slider__image(src="%=static=%img/general/slider3.jpg", alt="")
+            .slider__item
+              img.slider__image(src="%=static=%img/general/slider4.jpg", alt="")
+      section.big-width-sec
+        .container
+          .workshops-grid
+            .workshops-grid__col.workshops-grid__col_pad
+              h2.reg-title Обучающие семинары
+              p Специально для вас мы проводим семинары и тренинги, на которых наши эксперты дают не только теоретическую базу, но и предоставляют возможность работы в платформе СБИС прямо на мероприятиях. Мы ждем вас!
+              .half-grid.half-grid_margb
+                .half-grid__col
+                  .purpl-nums
+                    .purpl-nums__text-top 12 530
+                    .purpl-nums__text-bottom Человек уже посетили #[br] наши семинары по СБИС
+                .half-grid__col
+                  .purpl-nums
+                    .purpl-nums__text-top 10 лет 
+                    .purpl-nums__text-bottom Мы успешно работаем #[br] в сфере электронных решений
+              a(href="#").btn.btn_border Все семинары
+            .workshops-grid__col.workshops-grid__col_bg
+              img(src="%=static=%img/general/seminar.jpg", alt="").bg-workshop
+              .workshop-wrap 
+                p.soon-work-text СКОРО СЕМИНАР
+                .date-work-row
+                  .date-work-row__item
+                    != pugHelpers.Icon.call(locals, {iconName: 'date', className: 'date-work-row__vector', iconWidth: '23', iconHeight: '22'})  
+                    span 21.03.2019
+                  .date-work-row__item
+                    != pugHelpers.Icon.call(locals, {iconName: 'pcale2', className: 'date-work-row__vector', iconWidth: '15', iconHeight: '23'})  
+                    span 10:00-15:00, МСК
+                .sell-workshop-text
+                  big.sell-workshop-text__big Электронные торги от А до Я.   
+                  small.sell-workshop-text__small Как увеличить шансы на победу?
+                .workshop-bottom
+                  .workshop-bottom__item
+                    .workshop-bottom__price 2 000 ₽ 
+                  .workshop-bottom__item
+                    button.btn.btn_bg Записаться 
+      section.form-sec
+        img(src="%=static=%img/general/formbg.jpg", alt="").form-sec__bg-image       
+        .form-sec__content.container
+          h2.reg-title.reg-title_white.reg-title_mob-style Будьте в курсе последних новостей!  
+          form(action="" method="post" novalidate ).form-sec__grid.js_form 
+            .form-sec__left.form-style
+              .form-style__col.form-group
+                input(type="text" name="name" id="name" placeholder=" " ).form-style__field
+                label(for="name").form-style__name-label Имя 
+                .messages
+              .form-style__col.form-group 
+                input(type="email"  id="email" name="email" placeholder=" ").form-style__field
+                label(for="email"  ).form-style__name-label Email
+                .messages
+            .form-style__w270
+              button(type="submit").btn.btn_bg.btn_w100  Подписаться 
+              p.form-style__agree Я принимаю условия 
+                a(href="#").form-style__agree-link Оферты сайта 
+                | и согласен с 
+                a(href="#").form-style__agree-link  Политикой конфиденциальности.
+          .form-success.js-form-success &nbsp;

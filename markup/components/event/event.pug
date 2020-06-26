@@ -1,0 +1,13 @@
+mixin event(data)
+  .event.event_hide
+    .event__bigdate
+      span.event__day Mon
+      b.event__date-day 24
+    .event__content 
+      p.event__title Main Street Meet and Greet
+      p.event__rows
+        != pugHelpers.Icon.call(locals, {iconName: 'time', className: 'events__vector', iconWidth: '16', iconHeight: '16'})  
+        span.event__texts 10:00 AM - 11:00 AM
+      p.event__rows 
+        != pugHelpers.Icon.call(locals, {iconName: 'place', className: 'events__vector', iconWidth: '18', iconHeight: '16'})  
+        span.event__texts 125 Main St., Cherrytown, OH

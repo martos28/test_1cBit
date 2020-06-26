@@ -1,0 +1,26 @@
+mixin footer(data)
+  footer.footer
+    a(href="#header").go-up
+            != pugHelpers.Icon.call(locals, {iconName: 'arrow', className: 'vector', iconWidth: '15', iconHeight: '15'})
+    .container.footer-flex
+      .copyr © 1997-2019 Компания “AБT”. Все права защищены.
+      ul.socials
+        li.socials__itm 
+          a(href="#").socials__link 
+            != pugHelpers.Icon.call(locals, {iconName: 'instagram', className: 'socials__vector', iconWidth: '20', iconHeight: '20'})
+        li.socials__itm 
+          a(href="#").socials__link 
+            != pugHelpers.Icon.call(locals, {iconName: 'odnoklassniki', className: 'socials__vector', iconWidth: '18', iconHeight: '20'})
+        li.socials__itm 
+          a(href="#").socials__link 
+            != pugHelpers.Icon.call(locals, {iconName: 'youtube', className: 'socials__vector', iconWidth: '25', iconHeight: '23'})
+        li.socials__itm 
+          a(href="#").socials__link 
+            != pugHelpers.Icon.call(locals, {iconName: 'vk', className: 'socials__vector', iconWidth: '20', iconHeight: '20'})
+        li.socials__itm 
+          a(href="#").socials__link 
+            != pugHelpers.Icon.call(locals, {iconName: 'facebook', className: 'socials__vector', iconWidth: '20', iconHeight: '20'})
+      .border-l Политика конфиденциальности
+          
+
+

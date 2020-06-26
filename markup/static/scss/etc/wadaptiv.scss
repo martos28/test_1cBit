@@ -1,0 +1,180 @@
+
+@include _1250 {
+   .tns-controls {
+      left: 14px;
+      top: -5px;
+      outline: none;
+      z-index: 3; 
+      transform: rotate(90deg);
+   }
+   .slider-wrap {
+      margin-top: 40px;
+   }
+}
+
+@include _1110 {
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+   .page__wrapper {
+      overflow: hidden;
+   }
+}
+
+
+@include _1000 {
+
+   .container_nopad {
+       padding-left: 0;
+       padding-right: 0;
+   }
+   .reg-title { 
+      font-size: 31px;
+   } 
+   .flex-on-pc {
+      display: flex;
+      flex-direction: column-reverse;
+   }
+    p {
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 18px 0;
+   }
+   .workshops-grid__col_pad {
+	    padding-top: 42px;
+	    padding-bottom: 42px;
+   }
+   .bg-workshop {
+      width: calc(100% + 40px);
+      left: -20px; 
+   }
+   .soon-work-text {
+      margin-bottom: 40px;
+   }
+   .workshop-wrap {
+      padding: 32px 30px 56px 31px;
+   }
+   .form-sec__grid {
+      display: block;
+   }
+   .form-sec__left {
+      margin-bottom: 30px;
+   }
+   .form-success {
+      padding-top: 54px;
+   }
+} // max 1000
+
+
+@include _768 {
+  .form-sec__left {
+      width: 100%;
+   }
+   .workshop-wrap {
+      padding: 32px 0px 44px 0px;
+   }
+} // max 768
+
+
+
+
+@include _540 {
+   .reg-title_mob-style {
+      font-size: 28px;
+      line-height: 32px;
+   }
+   .sell-workshop-text {
+      line-height: 29px;
+   }
+   .sell-workshop-text__small,
+   .sell-workshop-text__big {
+      font-size: 26px;
+   }
+   .date-work-row__item {
+      width: 50%;
+   }
+   .workshop-bottom {
+      display: block;
+   }
+   .workshop-bottom__item {
+      width: 100%;
+   }
+   .workshop-bottom__price {
+      margin-bottom: 30px;
+   }  
+} // max540
+@include _440 {
+    .form-sec__left {
+      display: block;
+   }
+   .form-style__col {
+      width: 100%;
+      margin-bottom: 30px;
+   } 
+} // max 440
+
+
+
+@include min_769 { 
+   .four-cols-about {
+      display: flex;
+      justify-content: space-between;
+      &__col {
+         width: 50%;
+      }
+   }
+   .half-grid {
+      display: flex;
+      justify-content: space-between;
+      &__col {
+         width: 45%;
+      }
+   }
+
+}
+@include min_1001 { 
+ .workshops-grid {
+    display: flex;
+    &__col {
+       width: 50%;
+    }
+ }
+.four-cols-about__col {
+   width: 24%;
+}
+.two-cols-about {
+   display: flex;  
+   justify-content: space-between;
+   &__col {
+      width: 49%;
+   }
+}
+
+   p {
+    font-size: 18.9px;
+    line-height: 29px;
+    font-weight: 400;
+    margin: 0 0 22px 0;
+    color: #000;
+   }
+
+   .reg-title { 
+      font-size: 36px;
+   }
+  
+  .workshops-grid__col_pad {
+	padding-top: 70px;
+	padding-bottom: 77px;
+   padding-right: 40px;
+   }
+
+
+
+} //minw1025
+
+
+
+
+
+

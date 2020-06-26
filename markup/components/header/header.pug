@@ -1,0 +1,27 @@
+mixin header(data)
+  header.header#header 
+    .container.pc-between-h100 
+      .header-left
+        span.burger.js-show-menu
+          span
+          span
+          span
+        a(href="/").logo
+          img(src="%=static=%img/general/logo.png", alt="logo") 
+      nav.top-menu.js-mob-drop-menu
+        ul.top-menu__list
+          li.top-menu__item.top-menu__item_parent.top-menu__item_active: a(href="#").top-menu__link продукты 
+          li.top-menu__item: a(href="#").top-menu__link Тарифы 
+          li.top-menu__item: a(href="#").top-menu__link Услуги 
+          li.top-menu__item: a(href="#").top-menu__link важное
+          li.top-menu__item: a(href="#").top-menu__link Поддержка
+          li.top-menu__item: a(href="#").top-menu__link О компании
+      .phone-header
+        a(href="tel:+74957484748").phone-header__icon-tel
+          != pugHelpers.Icon.call(locals, {iconName: 'phone', className: 'phone-header__vector', iconWidth: '14', iconHeight: '14'})  
+        a(href="tel:+74957484748").phone-header__number +7 495 748-47-48
+        span.phone-header__words Работаем в режиме 24/7
+                              
+
+
+

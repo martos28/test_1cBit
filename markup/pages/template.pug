@@ -1,0 +1,31 @@
+block variables
+
+doctype html
+html(class="no-js", lang="ru")
+  include ../components/head/head.pug
+  include ../components/header/header.pug
+  include ../components/footer/footer.pug
+  include ../components/event/event.pug
+  head
+      +head(head.defaults)
+  body.page
+      |%=symbols=%
+      .page__wrapper
+          //-.pixelp
+          +header()
+          main    
+            block content
+          
+      .page__footer  
+        +footer()
+
+      script(src='%=static=%js/separate-js/svg4everybody.min.js')
+ 
+  
+      script svg4everybody();  
+      //- Main scripts. You can replace it, but I recommend you to leave it here
+      block scripts
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js')
+      script(src='//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js')
+      script(src='%=static=%js/main%=hash=%%=min=%.js')
+      
