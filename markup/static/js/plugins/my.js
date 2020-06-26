@@ -181,7 +181,7 @@ let slider = tns({
       messages.appendChild(block);
     }
 
-    function showSuccess() {
+    function showSuccess() {  
       // We made it \:D/
        const form_inner = document.querySelector(".js-form-success");
        form_inner.innerHTML = "Ура! Данные успешно отправлены, мы с вами скоро свяжемся.."
